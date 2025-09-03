@@ -1,8 +1,8 @@
 module.exports = {
     name: "Pro Tubs LLC",
     email: "bathtubs76@gmail.com",
-    phoneForTel: "248.519.7913",
-    phoneFormatted: "248.519.7913",
+    phoneForTel: "386.760.3515",
+    phoneFormatted: "386.760.3515",
     address: {
         lineOne: "14350 Eureka Rd",
         lineTwo: "",

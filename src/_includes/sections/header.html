@@ -514,14 +514,18 @@
 <--- -------------------------- -*/
 
 /* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  body.scroll #cs-navigation {
+
+body.scroll #cs-navigation {
     /* 53px, the ssme height as the cs-top-container */
     transform: translateY(-3.3125rem);
     background-color: white;
     border-bottom:1px solid rgba(0,0,0,.1);
     transition: all ease .1s;
   }
+
+  
+@media only screen and (min-width: 64rem) {
+  
   #cs-navigation {
     width: 100%;
     padding: 0;
@@ -827,7 +831,7 @@
     
     document.addEventListener('scroll', (e) => { 
         const scroll = document.documentElement.scrollTop;
-        if(scroll >= 100){
+        if(scroll >= 60){
     document.querySelector('body').classList.add('scroll')
         } else {
         document.querySelector('body').classList.remove('scroll')

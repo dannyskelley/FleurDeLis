@@ -1,76 +1,330 @@
 <!-- ============================================ -->
-<!--                   Quote                      -->
+<!--                   Reviews                    -->
 <!-- ============================================ -->
 
 <style>
     /*-- -------------------------- -->
-<---           Quote            -->
+<---           Reviews          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #quote-560 {
-        padding: var(--sectionPadding);
-        background-color: #fff;
-    }
-    #quote-560 .cs-container {
-        width: 100%;
-        max-width: 80rem;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* 48px - 64px */
-        gap: clamp(3rem, 6vw, 4rem);
-    }
-    #quote-560 .cs-content {
-        /* set text align to left if content needs to be left aligned */
-        text-align: left;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        /* centers content horizontally, set to flex-start to left align */
-        align-items: flex-start;
-        /* 16px - 20px */
-        gap: clamp(1rem, 2vw, 1.25rem);
-    }
-
-
-    #quote-560 .cs-quote {
-        /* 31px - 49px */
-        font-size: clamp(1.9375rem, 5.1vw, 3.0625rem);
-        line-height: 1.2em;
-        font-weight: 900;
-        margin: 0;
-        color: var(--bodyTextColorWhite);
-    }
-    #quote-560 .cs-name {
-        /* 16px - 20px */
-        font-size: clamp(1rem, 1.7vw, 1.25rem);
-        line-height: 1.2em;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin: 0;
-        color: var(--secondary);
-        display: block;
-        letter-spacing: 0.01em;
-    }
+  #reviews-2011 {
+    padding: var(--sectionPadding);
+    background-color: #faf6f2;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-2011 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #reviews-2011 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-2011 .cs-topper {
+    color: var(--secondary);
+  }
+  #reviews-2011 .cs-title {
+    margin: 0;
+  }
+  #reviews-2011 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 32px - 40px */
+    gap: clamp(2rem, 4vw, 2.5rem);
+  }
+  #reviews-2011 .cs-item {
+    /* removed on tablet */
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.0625rem;
+    position: relative;
+    /* white background for the card. we do it as a &::before so we can overlap the card under the image */
+  }
+  #reviews-2011 .cs-item::before {
+    content: "";
+    width: 100%;
+    background-color: #fff;
+    border-radius: 2.5rem;
+    position: absolute;
+    top: 0;
+    bottom: 15rem;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-2011 .cs-review {
+    width: 100%;
+    padding: 2.5rem 1rem 0;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  #reviews-2011 .cs-item-stars {
+    width: 6.9375rem;
+    height: auto;
+    margin: 0 0 1.5rem 0;
+    display: block;
+  }
+  #reviews-2011 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    margin: 0 0 1rem;
+    color: var(--headerColor);
+  }
+  #reviews-2011 .cs-item-text {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2vw, 1.05rem);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+  #reviews-2011 .cs-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--headerColor);
+    display: block;
+  }
+  #reviews-2011 .cs-job {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: var(--bodyTextColor);
+    display: block;
+  }
+  #reviews-2011 .cs-image-group {
+    font-size: min(4.02vw, 1rem);
+    width: 17.125em;
+    height: 23.9375em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #reviews-2011 .cs-picture {
+    width: 100%;
+    height: 23.875em;
+    box-sizing: border-box;
+    background-color: #dab692;
+    overflow: hidden;
+    border: 8px solid #dab692;
+    border-radius: 16.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #reviews-2011 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.7s;
+  }
+  #reviews-2011 .cs-graphic {
+    height: auto;
+    position: absolute;
+  }
+  #reviews-2011 .cs-brown {
+    width: 6.875em;
+    height: 7.25em;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    transform: rotate(-140deg);
+  }
+  #reviews-2011 .cs-dots {
+    width: 5.5625em;
+    height: 4.5em;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #reviews-2011 .cs-leaf {
+    width: 12.375em;
+    height: 9.5625em;
+    bottom: 0;
+    left: -0.5625rem;
+    z-index: 1;
+  }
+  #reviews-2011 .cs-flower {
+    /* 121px - 227px */
+    width: clamp(7.57rem, 14vw, 14.1875rem);
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -5;
+  }
 }
-
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #reviews-2011 .cs-container {
+    max-width: 80rem;
+  }
+  #reviews-2011 .cs-card-group {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #reviews-2011 .cs-item {
+    max-width: none;
+    flex-direction: row;
+    grid-column: span 12;
+    align-items: stretch;
+  }
+  #reviews-2011 .cs-item::before {
+    width: auto;
+    bottom: 0;
+    left: 0;
+    right: 6.75rem;
+  }
+  #reviews-2011 .cs-image-group {
+    min-height: 31.25rem;
+    height: auto;
+    flex: none;
+  }
+  #reviews-2011 .cs-picture {
+    height: auto;
+    /* 60px - 80px */
+    top: clamp(3.75rem, 7vw, 5rem);
+    bottom: 5em;
+  }
+  #reviews-2011 .cs-dots,
+  #reviews-2011 .cs-brown {
+    /* 60px - 80px */
+    top: clamp(3.75rem, 7vw, 5rem);
+  }
+  #reviews-2011 .cs-leaf {
+    /* 60px - 80px */
+    bottom: clamp(3.75rem, 7vw, 5rem);
+    top: auto;
+  }
+  #reviews-2011 .cs-review {
+    padding: 2.5rem;
+  }
+}
+/* Large Desktop - 1400px */
+@media only screen and (min-width: 87.5rem) {
+  #reviews-2011 .cs-card-group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1.25rem;
+  }
+  #reviews-2011 .cs-item {
+    grid-column: span 6;
+  }
+  #reviews-2011 .cs-info {
+    margin-top: auto;
+  }
+  #reviews-2011 .cs-review {
+    padding-right: 0;
+  }
+}
+/* Larger Desktop - 1700px */
+@media only screen and (min-width: 106.25rem) {
+  #reviews-2011 .cs-flower {
+    margin-left: 46.5rem;
+    left: 50%;
+  }
+}
                                 
 </style>
 
-<section id="quote-560">
+<section id="reviews-2011">
     <div class="cs-container">
         <div class="cs-content">
-            <span class="cs-topper">⭐⭐⭐⭐⭐</span>
-            <p class="cs-title" style="color:black; max-width: 1200px;">
-               “I was ready to rip out my old tub, but Pro Tubs LLC saved me thousands of dollars" 
-
-            </p>
-            <SPAN class="cs-topper" style="color: black;">They showed up right on time, were super respectful of my home, and had the whole thing done in just a few hours. Now it looks brand new and I didn’t have to deal with any remodeling mess. Highly recommend!”</SPAN>
-        <DIV class="cs-text">- Warren, MI Homeowner</DIV>
+        
+            <h2 class="cs-title">What Our Clients Say</h2>
         </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-review">
+                    <div class="cs-flex-group">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gold-stars-alt.svg" alt="stars" width="111" height="21">
+                        <h3 class="cs-h3">True Professionals & Artists</h3>
+                        <p class="cs-item-text">
+                          I Moved to the area recently from LA, did not know anyone, planned my wedding, and the previous business that I had chosen to do my bridal hair and makeup cancelled on me the day before the wedding! I had to scramble to reschedule all my arrangements quickly . This salon saved the day !!! My hair color, cut, bridal style and makeup came out so beautiful and perfect !! This place has all the qualities a true salon should from the talent/ quality of work, the stylist’s team work, and making me feel like I had been going there for years.
+                        </p>
+                    </div>
+                    <div class="cs-info">
+                        <span class="cs-name">
+                            Laura L
+                            <a target="_blank" href="https://share.google/gPu9210LG75hUEp8s" class="cs-job">5 Star Review on Google</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/testimonial1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/testimonial1.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/testimonial1.jpg" alt="dermatologist" width="312" height="411">
+                    </picture>
+                    <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines2.svg" alt="graphic" width="131" height="99" aria-hidden="true">
+                    <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dot-group.svg" alt="graphic" width="131" height="99" aria-hidden="true">
+                    <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-leaf.svg" alt="graphic" width="131" height="99" aria-hidden="true">
+                </div>
+            </li>
+            <li class="cs-item">
+                <div class="cs-review">
+                    <div class="cs-flex-group">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gold-stars-alt.svg" alt="stars" width="111" height="21">
+                        <h3 class="cs-h3"> I get my hair colored every 2 months or so by Geri,</h3>
+                        <p class="cs-item-text">
+                    I get my hair colored every 2 months or so by Geri, I get exactly what I want despite my hair not being the easiest and my plans involving bright and strange color every time. Definitely recommend!
+                        </p>
+                        </div>
+                    <div class="cs-info">
+                        <span class="cs-name">
+                            Amirath N
+                         <a target="_blank" href="https://share.google/SM9wjbAtEuPKo1JMM" class="cs-job">5 Star Review on Google</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="/assets/images/testimonial2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="/assets/images/testimonial2.jpg">
+                        <img loading="lazy" decoding="async" src="/assets/images/testimonial2.jpg" alt="dermatologist" width="312" height="411">
+                    </picture>
+                    <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines2.svg" alt="graphic" width="131" height="99" aria-hidden="true">
+                    <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/dot-group.svg" alt="graphic" width="131" height="99" aria-hidden="true">
+                    <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/derma-leaf.svg" alt="graphic" width="131" height="99" aria-hidden="true">
+                </div>
+            </li>
+        </ul>
     </div>
+    <img class="cs-flower" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/banner-flower.svg" alt="graphic" loading="lazy" decoding="async" height="143" width="235">
 </section>
                                 
