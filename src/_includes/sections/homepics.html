@@ -2,109 +2,62 @@
 <!--                   Gallery                    -->
 <!-- ============================================ -->
 
+
 <style>
-  /*-- -------------------------- -->
-<---          Gallery           -->
+    /*-- -------------------------- -->
+<---           Gallery          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #gallery-1897 {
+  #gallery-2243 {
     padding: var(--sectionPadding);
-    background-color: #f6eddf;
-    /* stops the cs-graphics from causing an overflow */
-    overflow: hidden;
+
+   background-color: black;
     position: relative;
+    z-index: 999;
   }
-  #gallery-1897 .cs-container {
+  #gallery-2243 .cs-container {
     width: 100%;
-    max-width: 80rem;
+    max-width: 115rem;
     margin: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    gap: clamp(3rem, 5vw, 4rem);
     position: relative;
+    
   }
-  #gallery-1897 .cs-content {
+  #gallery-2243 .cs-content {
+    /* aligns text centrally. set to left to left-align text */
     text-align: center;
-    width: 100%;
+    pointer-events: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    /* centrally aligns items. set to flex-start to left-align items */
     align-items: center;
-    gap: 1.5rem;
-    z-index: 1;
+    z-index: 2;
   }
-  #gallery-1897 .cs-title {
-    max-width: 25ch;
-    margin: 0;
+  #gallery-2243 .cs-title {
+    max-width: 40ch;
   }
-  #gallery-1897 .cs-button-solid {
-color:white;
-    background-color: var(--secondary);
-
-  }
-  #gallery-1897 .cs-button-solid:before {
-    content: "";
-    width: 0;
-    height: 100%;
-    background: #000;
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: width 0.3s;
-  }
-  #gallery-1897 .cs-button-solid:hover {
-    color: #fff;
-  }
-  #gallery-1897 .cs-button-solid:hover:before {
+  #gallery-2243 .cs-gallery {
     width: 100%;
-  }
-  #gallery-1897 .cs-gallery {
-    width: 100%;
+    height: auto;
     display: grid;
-    grid-auto-flow: row;
-    /* 16px - 20px */
-    gap: clamp(1rem, 2vw, 1.25rem);
-    z-index: 1;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 16.666vw);
+    gap: clamp(0.5rem, 2vw, 1.25rem);
   }
-  #gallery-1897 .cs-item {
-    width: 100%;
-    /* 16px - 32px */
-    padding: clamp(1rem, 4vw, 2rem);
-    background-color: #faf6f2;
-    /* 16px - 32px */
-    border-radius: 1rem;
-    display: grid;
-    /* 8px - 16px */
-    column-gap: clamp(0.5rem, 2vw, 1rem);
-    row-gap: 1rem;
-  }
-  #gallery-1897 .cs-item-text {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    margin: 0;
-    color: var(--headerColor);
-    grid-column: span 2;
-  }
-  #gallery-1897 .cs-picture-group {
-    /* 160px - 320px */
-    min-height: clamp(10rem, 23vw, 20rem);
-    overflow: hidden;
-    border-radius: 1rem;
-    grid-column: span 1;
-    position: relative;
-  }
-  #gallery-1897 .cs-picture {
-    width: 100%;
-    height: 100%;
+  #gallery-2243 .cs-picture {
+    grid-column: span 6;
     display: block;
+    position: relative;
+    z-index: 1;
   }
-  #gallery-1897 .cs-picture img {
+  #gallery-2243 .cs-picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -112,168 +65,125 @@ color:white;
     top: 0;
     left: 0;
   }
-  #gallery-1897 .cs-tag {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    padding: 0.25rem 0.75rem;
-    background: rgba(0, 0, 0, 0.24);
-    color: var(--bodyTextColorWhite);
-    border: 1px solid var(--bodyTextColorWhite);
-    border-radius: 1.875rem;
-    position: absolute;
-    /* 8px - 16px */
-    bottom: clamp(0.5rem, 2vw, 1rem);
-    left: clamp(0.5rem, 2vw, 1rem);
-    backdrop-filter: blur(8px);
+  #gallery-2243 .cs-picture1 {
+    grid-row: 2 / span 3;
   }
-  #gallery-1897 .cs-graphic {
-    /* 500px - 835px */
-    width: clamp(31.25rem, 60vw, 52.1875rem);
-    /* 453px - 757px */
-    height: clamp(28.3125rem, 55vw, 47.3125rem);
-    object-fit: cover;
-    position: absolute;
-    z-index: 0;
-    opacity: 0.2;
+  #gallery-2243 .cs-picture2 {
+    grid-row: 1 / span 4;
   }
-  #gallery-1897 .cs-graphic-top {
-    top: 0;
-    right: -8.875rem;
+  #gallery-2243 .cs-picture3 {
+    grid-column: span 12;
+    grid-row: 5 / span 5;
   }
-  #gallery-1897 .cs-graphic-bottom {
-    bottom: 0;
-    left: 0;
+  #gallery-2243 .cs-picture4 {
+    grid-row: 10 / span 4;
+  }
+  #gallery-2243 .cs-picture5 {
+    grid-row: 11 / span 3;
   }
 }
-/* Tablet - 600px */
-@media only screen and (min-width: 37.5rem) {
-  #gallery-1897 .cs-content {
-    text-align: left;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #gallery-2243 .cs-gallery {
+    /* 320px - 600px */
+    height: clamp(20rem, 41vw, 37.5rem);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
   }
-  #gallery-1897 .cs-gallery {
-    grid-template-columns: repeat(2, 1fr);
+  #gallery-2243 .cs-gallery .cs-picture {
+    grid-column: span 1;
   }
-  #gallery-1897 .cs-graphic-top {
-    right: -8.375rem;
-    transform: initial;
+  #gallery-2243 .cs-gallery .cs-picture1 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 3;
   }
-  #gallery-1897 .cs-graphic-bottom {
-    left: -7.5rem;
-    transform: initial;
+  #gallery-2243 .cs-gallery .cs-picture2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 4;
+  }
+  #gallery-2243 .cs-gallery .cs-picture3 {
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 6;
+  }
+  #gallery-2243 .cs-gallery .cs-picture4 {
+    grid-column: 5 / span 1;
+    grid-row: 1 / span 4;
+  }
+  #gallery-2243 .cs-gallery .cs-picture5 {
+    grid-column: 6 / span 1;
+    grid-row: 2 / span 3;
   }
 }
 /* Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
-  #gallery-1897 .cs-graphic-top {
-    margin-left: 15rem;
-    left: 50%;
+
+    
+
+  
+  #gallery-2243 .cs-gallery {z-index: 999;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
   }
-  #gallery-1897 .cs-graphic-bottom {
-    margin-right: 16.25rem;
-    right: 50%;
-    left: initial;
+  #gallery-2243 .cs-gallery .cs-picture {
+    grid-column: span 1;
+  }
+  #gallery-2243 .cs-gallery .cs-picture1 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 4;
+  }
+  #gallery-2243 .cs-gallery .cs-picture2 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 5;
+  }
+  #gallery-2243 .cs-gallery .cs-picture3 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 6;
+    
+  }
+  #gallery-2243 .cs-gallery .cs-picture4 {
+    grid-column: 4 / span 1;
+    grid-row: 1 / span 5;
+  }
+  #gallery-2243 .cs-gallery .cs-picture5 {
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 4;
   }
 }
                                 
 </style>
 
-<section id="gallery-1897">
-    <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex">
-                <span class="cs-topper" style="color: var(--secondary);">Photos of Our Work</span>
-                <h2 class="cs-title" style="max-width: 1200px;">Stunning Transformations of Bathtubs We’ve Restored in Warren, MI & Metro Detroit</h2>
-            </div>
-           
-        </div>
-        <!--Gallery-->
-        <div class="cs-gallery">
-            <div class="cs-item">
-                <p class="cs-item-text">From chipped and stained to sleek and like new. This clawfoot tub was fully restored in just one day with our professional bathtub refinishing service in Warren, MI.</p>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/1.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">Before</span>
-                </div>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">After</span>
-                </div>
-            </div>
-            <div class="cs-item">
-                <p class="cs-item-text">From peeling and worn to smooth and spotless. This fiberglass tub was completely restored in one day with our expert bathtub resurfacing service in Warren, MI.</p>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/4.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/4.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/4.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">Before</span>
-                </div>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">After</span>
-                </div>
-            </div>
-            <div class="cs-item">
-                <p class="cs-item-text">From outdated and orange to clean and modern. This old tile and tub combo was fully refinished with a sleek, stone look coating. Giving the entire bathroom a fresh, contemporary feel in just one day.</p>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/5.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/5.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/5.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">Before</span>
-                </div>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/6.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/6.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/6.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">After</span>
-                </div>
-            </div>
-            <div class="cs-item">
-                <p class="cs-item-text">From faded pink tile to crisp and clean white. This vintage bathroom was updated with our professional tile refinishing service. Restoring the classic black and white style without replacing a single tile.</p>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/7.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/7.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/7.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">Before</span>
-                </div>
-                <div class="cs-picture-group">
-                    <picture class="cs-picture">
-                        <source media="(max-width: 600px)" srcset="/assets/images/8.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/8.jpg">
-                        <img loading="lazy" decoding="async" src="/assets/images/8.jpg" alt="gallery" width="305" height="400">
-                    </picture>
-                    <span class="cs-tag">After</span>
-                </div>
-            </div>
-        </div>
+<section id="gallery-2243">
+  <div class="cs-container">
+<DIV class="cs-title" style="color: white;">Take a look at some of the results our clients love.</DIV>
+    <div class="cs-gallery">
+        <picture class="cs-picture cs-picture1">
+            <source media="(max-width: 600px)" srcset="/assets/images/1-1.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/1-1.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/1-1.jpg" alt="formerly dress you people outside" width="380" height="271">
+        </picture>
+        <picture class="cs-picture cs-picture2">
+            <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="formerly dress you people outside" width="380" height="271">
+        </picture>
+        <picture class="cs-picture cs-picture3">
+            <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="formerly dress you people outside" width="380" height="271">
+        </picture>
+        <picture class="cs-picture cs-picture4">
+            <source media="(max-width: 600px)" srcset="/assets/images/4.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/4.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/4.jpg" alt="formerly dress you people outside" width="380" height="271">
+        </picture>
+        <picture class="cs-picture cs-picture5">
+            <source media="(max-width: 600px)" srcset="/assets/images/5.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/5.jpg">
+            <img loading="lazy" decoding="async" src="/assets/images/5.jpg" alt="formerly dress you people outside" width="380" height="271">
+        </picture>
     </div>
-    <img class="cs-graphic cs-graphic-top" src="/assets/images/logo.svg" alt="graphic" width="517" height="469" loading="lazy" decoding="async" aria-hidden="true" >
-    <img class="cs-graphic cs-graphic-bottom" src="/assets/images/logo.svg" alt="graphic" width="517" height="469" loading="lazy" decoding="async" aria-hidden="true" >
-
-<div style="text-align: center; margin-top: 40px;">
-          {% include 'components/cta_button.html' %}
 </div>
-  </section>
+
+    <a style="display:block; margin:50px  auto; max-width: 280px; background-color: white; color: black; " href="/contact" class="cs-button-solid">Book an Appointment</a>
+</section>
                                 
