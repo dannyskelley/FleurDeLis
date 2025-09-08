@@ -6,300 +6,347 @@
   /*-- -------------------------- -->
 <---          Hero              -->
 <--- -------------------------- -*/
-/* Mobile - 360px */
-@media only screen and (min-width: 0rem) {
-  #hero-1895 {
-    width: 100%;
-    padding: var(--sectionPadding);
-    background-color: #fff;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-  }
-  #hero-1895:before {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    opacity: 0.84;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #hero-1895 .cs-container {
-    width: 100%;
-    /* changes to 1280px at desktop */
-    max-width: 36.5rem;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* 48px - 80px */
-    gap: clamp(3rem, 6vw, 5rem);
-  }
-  #hero-1895 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: left;
-    width: 100%;
-    max-width: 35.625rem;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
-    position: relative;
-    z-index: 3;
-  }
-  #hero-1895 .cs-topper {
-    color: var(--secondary);
-  }
-  #hero-1895 .cs-text {
-    margin-bottom: 0.75rem;
-  }
-  #hero-1895 .cs-text:last-of-type {
-    margin-bottom: 2rem;
-  }
+  /* Mobile - 360px */
+  @media only screen and (min-width: 0rem) {
+    #hero-1895 {
+      width: 100%;
+      padding: var(--sectionPadding);
+      background-color: #fff;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
 
-  #hero-1895 .cs-info {
-    width: 100%;
-    margin-top: clamp(3rem, 6vw, 5rem);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1rem;
-  }
-  #hero-1895 .cs-info-pic {
-    width: 6.9375em;
-    height: auto;
-    border-radius: 1rem;
-    position: relative;
-  }
-  #hero-1895 .cs-wrapper {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  #hero-1895 .cs-address {
-    font-size: 1.25rem;
-    font-weight: 100;
-    line-height: 1.2em;
-    color: var(--headerColor);
-    display: block;
+    #hero-1895:before {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      opacity: 0.84;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    #hero-1895 .cs-container {
+      width: 100%;
+      /* changes to 1280px at desktop */
+      max-width: 36.5rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* 48px - 80px */
+      gap: clamp(3rem, 6vw, 5rem);
+    }
+
+    #hero-1895 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: left;
+      width: 100%;
+      max-width: 35.625rem;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: flex-start;
+      position: relative;
+      z-index: 3;
+    }
+
+    #hero-1895 .cs-topper {
+      color: var(--secondary);
+    }
+
+    #hero-1895 .cs-text {
+      margin-bottom: 0.75rem;
+    }
+
+    #hero-1895 .cs-text:last-of-type {
+      margin-bottom: 2rem;
+    }
+
+    #hero-1895 .cs-info {
+      width: 100%;
+      margin-top: clamp(3rem, 6vw, 5rem);
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    #hero-1895 .cs-info-pic {
+      width: 6.9375em;
+      height: auto;
+      border-radius: 1rem;
+      position: relative;
+    }
+
+    #hero-1895 .cs-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    #hero-1895 .cs-address {
+      font-size: 1.25rem;
+      font-weight: 100;
+      line-height: 1.2em;
+      color: var(--headerColor);
+      display: block;
       font-family: 'Playfair Display';
       font-size: 1.5rem;
-  }
-  #hero-1895 .cs-icon {
-    width: 1.5rem;
-    height: auto;
-    margin-right: 0.25rem;
-  }
-  #hero-1895 .cs-slogan {
-    font-size: 0.875rem;
-    font-weight: 400;
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #hero-1895 .cs-image-group {
-    font-size: min(2.29vw, 0.9rem);
-    width: 34.9375em;
-    height: 42.5em;
-    display: block;
-    position: relative;
-    z-index: 2;
-  }
-  #hero-1895 .cs-picture {
-    width: 32.625em;
-    height: 42.5em;
-    box-sizing: border-box;
-    background-color: #dab692;
-    overflow: hidden;
-    border: 8px solid #dab692;
-    border-radius: 16.25rem;
-    position: absolute;
-    right: 0;
-    z-index: -1;
-  }
-  #hero-1895 .cs-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.7s;
-  }
-  #hero-1895 .cs-graphic {
-    height: auto;
-    position: absolute;
-  }
-  #hero-1895 .cs-peach {
-    width: 5.375em;
-    height: auto;
-    top: 0.375em;
-    right: 5.6875em;
-  }
-  #hero-1895 .cs-swirl {
-    width: 9.8125em;
-    height: auto;
-    top: 1.5625em;
-    right: 0;
-    z-index: 0;
-  }
-  #hero-1895 .cs-dots {
-    width: 15.375em;
-    height: auto;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #hero-1895 .cs-leaf {
-    width: 13.4375em;
-    height: auto;
-    right: 0;
-    bottom: 0;
-  }
-  #hero-1895 .cs-button {
-    width:280px;
-    max-width: 250px;
-    height: auto;
-    top: 26.5em;
-   
-   margin: auto;
-  }
-  #hero-1895 .cs-info-text {
-    /* 14px - 20px */
-    font-size: clamp(0.875rem, 3.5vw, 1.25rem);
-    font-weight: 600;
-    line-height: 1.6em;
-    text-align: center;
-    max-width: 13.9375em;
-    margin: 0;
-    color: var(--bodyTextColorWhite);
-  }
-  #hero-1895 .cs-brown-lines {
-    width: 46.625em;
-    height: auto;
-    left: 20.6875em;
-    top: 24.6875em;
-    z-index: -10;
-    transform: rotate(36deg);
-  }
-  #hero-1895 .cs-background {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  #hero-1895 .cs-background img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-}
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+    }
+
+    #hero-1895 .cs-icon {
+      width: 1.5rem;
+      height: auto;
+      margin-right: 0.25rem;
+    }
+
+    #hero-1895 .cs-slogan {
+      font-size: 0.875rem;
+      font-weight: 400;
+      line-height: 1.5em;
+      color: var(--bodyTextColor);
+      display: block;
+    }
+
+    #hero-1895 .cs-image-group {
+      font-size: min(2.29vw, 0.9rem);
+      width: 34.9375em;
+      height: 42.5em;
+      display: block;
+      position: relative;
+      z-index: 2;
+    }
+
+    #hero-1895 .cs-picture {
+      width: 32.625em;
+      height: 42.5em;
+      box-sizing: border-box;
+      background-color: #dab692;
+      overflow: hidden;
+      border: 8px solid #dab692;
+      border-radius: 16.25rem;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+
+    #hero-1895 .cs-picture img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: transform 0.7s;
+    }
+
+    #hero-1895 .cs-graphic {
+      height: auto;
+      position: absolute;
+    }
+
+    #hero-1895 .cs-peach {
+      width: 5.375em;
+      height: auto;
+      top: 0.375em;
+      right: 5.6875em;
+    }
+
+    #hero-1895 .cs-swirl {
+      width: 9.8125em;
+      height: auto;
+      top: 1.5625em;
+      right: 0;
+      z-index: 0;
+    }
+
+    #hero-1895 .cs-dots {
+      width: 15.375em;
+      height: auto;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #hero-1895 .cs-leaf {
+      width: 13.4375em;
+      height: auto;
+      right: 0;
+      bottom: 0;
+    }
 
     #hero-1895 .cs-button {
-    width:280px;
-    max-width: 280px;
-    height: auto;
-    top: 38.5em;
-   left:9em;
-   margin: auto;
+      width: 280px;
+      max-width: 250px;
+      height: auto;
+      top: 26.5em;
+
+      margin: auto;
+    }
+
+    #hero-1895 .cs-info-text {
+      /* 14px - 20px */
+      font-size: clamp(0.875rem, 3.5vw, 1.25rem);
+      font-weight: 600;
+      line-height: 1.6em;
+      text-align: center;
+      max-width: 13.9375em;
+      margin: 0;
+      color: var(--bodyTextColorWhite);
+    }
+
+    #hero-1895 .cs-brown-lines {
+      width: 46.625em;
+      height: auto;
+      left: 20.6875em;
+      top: 24.6875em;
+      z-index: -10;
+      transform: rotate(36deg);
+    }
+
+    #hero-1895 .cs-background {
+      width: 100%;
+      height: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+
+    #hero-1895 .cs-background img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
 
-  #hero-1895 .cs-container {
-    max-width: 75rem;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: stretch;
+  /* Small Desktop - 1024px */
+  @media only screen and (min-width: 64rem) {
+
+    #hero-1895 .cs-button {
+      width: 280px;
+      max-width: 280px;
+      height: auto;
+      top: 38.5em;
+      left: 9em;
+      margin: auto;
+    }
+
+    #hero-1895 .cs-container {
+      max-width: 75rem;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    #hero-1895 .cs-content {
+      /* 48px - 64px */
+      padding: clamp(3rem, 5vw, 4rem) 0;
+    }
+
+    #hero-1895 .cs-image-group {
+      font-size: min(1.27vw, 1rem);
+      height: auto;
+      min-height: 42.5em;
+      /* sends it to the right in the 2nd position */
+      order: 2;
+      flex: none;
+    }
+
+    #hero-1895 .cs-picture {
+      height: 100%;
+    }
   }
-  #hero-1895 .cs-content {
-    /* 48px - 64px */
-    padding: clamp(3rem, 5vw, 4rem) 0;
+
+  /* Large Desktop - 1600px */
+  @media only screen and (min-width: 100rem) {
+    #hero-1895 .cs-background {
+      background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dermatology-banner.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      opacity: .9;
+    }
+
+    #hero-1895 .cs-background img {
+      display: none;
+    }
+
+    #hero-1895 .cs-title {
+      font-size: 52px;
+    }
   }
-  #hero-1895 .cs-image-group {
-    font-size: min(1.27vw, 1rem);
-    height: auto;
-    min-height: 42.5em;
-    /* sends it to the right in the 2nd position */
-    order: 2;
-    flex: none;
-  }
-  #hero-1895 .cs-picture {
-    height: 100%;
-  }
-}
-/* Large Desktop - 1600px */
-@media only screen and (min-width: 100rem) {
-  #hero-1895 .cs-background {
-    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/dermatology-banner.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    opacity: .9;
-  }
-  #hero-1895 .cs-background img {
-    display: none;
-  }
-  #hero-1895 .cs-title {font-size: 52px;}
-}
-                                
 </style>
 
 <section id="hero-1895" data-aos="fade-in">
-    <div class="cs-container">
-      <div class="cs-image-group">
-            <picture class="cs-picture">
-                <!--Mobile Image-->
-                <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
-                <!--Tablet and above Image-->
-                <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
-                <img loading="lazy" decoding="async" src="/assets/images/1.jpg" alt="dermatologist" width="324" height="467">
-            </picture>
-            <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/hero-peach-blob.svg" alt="graphic" width="208" height="203" aria-hidden="true">
-            <img class="cs-graphic cs-swirl" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-swirl.svg" alt="graphic" width="56" height="42" aria-hidden="true">
-            <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-dots.svg" alt="graphic" width="379" height="394" aria-hidden="true">
-            <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/cs-leaf-right.svg" alt="graphic" width="179" height="225" aria-hidden="true">
-                   
-             <img class="cs-graphic cs-button" loading="lazy" decoding="async" src="/assets/images/sig.jpg" alt="graphic" width="179" height="225" aria-hidden="true">
-          </div>
-        <div class="cs-content">
-            <div class="cs-flex">
-                
-                <h2 class="cs-title">Family Owned Hair Salon in Port Orange for 25 Years</h2>
-            </div>
-            
-            <p class="cs-text">
-               At Fleur de Lis Salon, we specialize in haircolor, highlights, and hair extensions, along with precision haircuts for women, men, and children. We also offer facial waxing, conditioning treatments, perms, bridal hair, updos, Brazilian Blowouts, and keratin treatments. All in a safe, comfortable space where you get the attention you deserve.
-            </p>
-            <a href="/contact" class="cs-button-solid">Book an Appointment</a>
-            <div class="cs-info">
-                <img class="cs-info-pic" loading="lazy" decoding="async" src="/assets/images/salon.jpg" alt="graphic" width="179" height="225" aria-hidden="true">
-                <div class="cs-wrapper">
-                    <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/brown-pin-derm.svg" loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
-                    <div class="cs-flex">
-                        <span class="cs-address">209 Dunlawton Ave Ste 8<br>
-Port Orange, FL 32127</span>                    
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+  <div class="cs-container">
+    <div class="cs-image-group">
+      <picture class="cs-picture">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="/assets/images/1.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="/assets/images/1.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/1.jpg" alt="dermatologist" width="324" height="467">
+      </picture>
+      <img class="cs-graphic cs-peach" loading="lazy" decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/hero-peach-blob.svg" alt="graphic"
+        width="208" height="203" aria-hidden="true">
+      <img class="cs-graphic cs-swirl" loading="lazy" decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-swirl.svg" alt="graphic" width="56"
+        height="42" aria-hidden="true">
+      <img class="cs-graphic cs-dots" loading="lazy" decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/beige-dots.svg" alt="graphic" width="379"
+        height="394" aria-hidden="true">
+      <img class="cs-graphic cs-leaf" loading="lazy" decoding="async"
+        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/cs-leaf-right.svg" alt="graphic" width="179"
+        height="225" aria-hidden="true">
+
+      <img class="cs-graphic cs-button" loading="lazy" decoding="async" src="/assets/images/sig.jpg" alt="graphic"
+        width="179" height="225" aria-hidden="true">
     </div>
-    <img class="cs-graphic cs-brown-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/hero-brown-lines.svg" alt="graphic" width="179" height="225" aria-hidden="true">
+    <div class="cs-content">
+      <div class="cs-flex">
+
+        <h2 class="cs-title">Family Owned Hair Salon in Port Orange for 25 Years</h2>
+      </div>
+
+      <p class="cs-text">
+        At Fleur de Lis Salon, we specialize in haircolor, highlights, and hair extensions, along with precision
+        haircuts for women, men, and children. We also offer facial waxing, conditioning treatments, perms, bridal hair,
+        updos, and Brazilian Blowout keratin treatments. All in a safe, comfortable space where you get the attention
+        you deserve.
+      </p>
+      <a href="/contact" class="cs-button-solid">Book an Appointment</a>
+      <div class="cs-info">
+        <img class="cs-info-pic" loading="lazy" decoding="async" src="/assets/images/salon.jpg" alt="graphic"
+          width="179" height="225" aria-hidden="true">
+        <div class="cs-wrapper">
+          <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/brown-pin-derm.svg"
+            loading="lazy" decoding="async" alt="icon" width="33" height="38" aria-hidden="true">
+          <div class="cs-flex">
+            <span class="cs-address">209 Dunlawton Ave Ste 8<br>
+              Port Orange, FL 32127</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <img class="cs-graphic cs-brown-lines" loading="lazy" decoding="async"
+    src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/hero-brown-lines.svg" alt="graphic" width="179"
+    height="225" aria-hidden="true">
 
 </section>
-                                
