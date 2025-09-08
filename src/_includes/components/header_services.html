@@ -2,43 +2,84 @@
 <!--                   Banner                     -->
 <!-- ============================================ -->
 
-<style>
-    /*-- -------------------------- -->
+<STYLE>
+  /*-- -------------------------- -->
 <---          Banner            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #banner-843 {
-    /* 175px - 260px top */
-    padding: clamp(10.9375rem, 20vw, 16.25rem) 1rem clamp(6.25rem, 14vw, 12vw);
-    /* clips svg wave from causing overflow issues */
+  #banner-1881 {
+    padding: var(--sectionPadding);
+    /* 180px - 242px */
+    padding-top: clamp(11.25rem, 27vw, 15.125rem);
+    /* 60px - 182px */
+    padding-bottom: clamp(3.75rem, 14vw, 11.375rem);
+    /* clips the line from causing overflow issues for going off screen */
     overflow: hidden;
     position: relative;
     z-index: 1;
+    background-color: #FAF7F4;
   }
-  #banner-843 .cs-container {
+  #banner-1881 .cs-container {
     text-align: center;
     width: 100%;
-    max-width: 80rem;
+    max-width: 75rem;
     margin: auto;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    flex-direction: column;
-    gap: 1rem;
+    gap: 0.75rem;
   }
-  #banner-843 .cs-int-title {
+  #banner-1881 .cs-int-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 900;
     line-height: 1.2em;
     text-align: inherit;
     margin: 0;
-    color: var(--bodyTextColorWhite);
+    color: var(--headerColor);
     position: relative;
   }
-  #banner-843 .cs-background {
+  #banner-1881 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-1881 .cs-link {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #banner-1881 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #banner-1881 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-1881 .cs-link:after {
+    /* chevron */
+    content: "";
+    width: 0.4375rem;
+    height: 0.75rem;
+    margin: 0 1rem;
+    background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-right-arrow-2.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+  }
+  #banner-1881 .cs-link.cs-active {
+    color: var(--bodyTextColor);
+  }
+  #banner-1881 .cs-background {
     width: 100%;
     height: 100%;
     display: block;
@@ -47,66 +88,46 @@
     left: 0;
     z-index: -1;
   }
-  #banner-843 .cs-background:before {
+  #banner-1881 .cs-background:before {
     /* background color overlay */
     content: "";
-    position: absolute;
-    display: block;
-    height: 100%;
     width: 100%;
-    background: #1a1a1a;
-    opacity: 0.54;
+    height: 100%;
+    background: #FAF6F2;
+    opacity: 0.84;
+    display: block;
+    position: absolute;
     top: 0;
     left: 0;
     z-index: 1;
   }
-  #banner-843 .cs-background img {
+  #banner-1881 .cs-background img {
+    width: 100%;
+    height: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    /* Makes img tag act as a background image */
-    object-fit: cover;
   }
-  #banner-843 .cs-wave {
-    /* we're stretching the svg wider than the viewport so it's taller and has more of a presence */
-    width: 48rem;
+  #banner-1881 .cs-graphic {
+    /* 123px - 227px */
+    width: clamp(7.71rem, 22.5vw, 14.19rem);
     height: auto;
-    display: block;
     position: absolute;
-    left: 50%;
-    bottom:-20px;
-    transform: translateX(-50%);
+    top: 1.25rem;
+    right: -2rem;
     z-index: -1;
   }
 }
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #banner-843 .cs-wave {
-    width: 100%;
-    left: 0;
-    transform: none;
-    bottom:-30px;
-  }
-}
-                                </style>
+                                
+</STYLE>
 
-<div id="banner-843">
+<div id="banner-1881" data-aos="fade-in">
     <div class="cs-container">
-        <span class="cs-int-title">Our Services</span>
+        <span class="cs-title">Our Services</span>
+        
     </div>
-    <!--Background Image-->
-    <picture class="cs-background" aria-hidden="true">
-        <!--Mobile Image-->
-        <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
-        <!--Tablet and above Image-->
-        <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
-        <img loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="yoga" width="1280" height="568">
-    </picture>
-    <!--Change the svg path fill color to whatever color the section below is so you can match it and create the illusion it is all one piece-->
- <svg class="cs-wave" width="1920" height="208" viewBox="0 0 1920 208" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M1920 179V91.3463C1835.33 91.3463 1715.47 76.615 1549.2 32.9521C1299.48 -32.3214 1132.77 12.1006 947.32 61.5167C810.762 97.9044 664.042 137 466.533 137C331.607 137 256.468 123.447 188.082 111.113C130.974 100.812 78.5746 91.3609 0 91.3609V179H1920Z" fill="white"></path>
-</svg>
+
 </div>
                                 
