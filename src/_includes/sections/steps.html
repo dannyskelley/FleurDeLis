@@ -1,199 +1,258 @@
 <!-- ============================================ -->
-<!--                  Services                    -->
+<!--                    Steps                     -->
 <!-- ============================================ -->
 
+
 <style>
-    /*-- -------------------------- -->
-<---          Services          -->
+  /*-- -------------------------- -->
+<---          Steps             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1331 {
+  #steps-1893 {
     padding: var(--sectionPadding);
-    background-color: #99ccff;
+    background-color: #fff;
+    overflow: hidden;
     position: relative;
     z-index: 1;
   }
-  #services-1331 .cs-container {
+  #steps-1893 .cs-container {
     width: 100%;
-    /* changes to 1280px at tablet */
-    max-width: 34.375rem;
+    /* changes to 1280px at desktop */
+    max-width: 44rem;
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #services-1331 .cs-content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-  }
-  #services-1331 .cs-flex-group {
-    /* prevents flexbox from squishing it */
-    flex: none;
-  }
-  #services-1331 .cs-card-group {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    row-gap: 1rem;
-  }
-  #services-1331 .cs-item {
-    list-style: none;
-    width: 100%;
-    box-sizing: border-box;
-    /* 40px - 60px top & bottom,  20px - 48px left & right, */
-    padding: clamp(2.5rem, 4.1vw, 3.75rem) clamp(1.25rem, 3.4vw, 3rem);
-    background-color: #fff;
-    grid-column: span 12;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  #services-1331 .cs-item:hover {
-    transform: translateY(-1rem);
-    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
-  }
-  #services-1331 .cs-link {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    /* set text align to center if content needs to be centrally aligned */
-    text-align: left;
+    align-items: center;
+    gap: 2rem;
   }
-  #services-1331 .cs-step {
-    font-size: var(--topperFontSize);
-    line-height: 1.2em;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    /* 48px - 100px */
-    margin-bottom: clamp(3rem, 7.8vw, 6.25rem);
-    color: var(--secondary);
+  #steps-1893 .cs-image-group {
+    font-size: min(2.24vw, 0.9rem);
+    width: 30.125em;
+    height: 38.5em;
     display: block;
-    text-align: inherit;
+    position: relative;
+    z-index: 1;
   }
-  #services-1331 .cs-h3 {
-    font-size: 1.25rem;
-    line-height: 1.2em;
-    font-weight: 900;
-    margin: 0;
-    margin-bottom: 0.75rem;
-    color: var(--headerColor);
-    transition: color 0.3s;
-    text-align: inherit;
-  }
-  #services-1331 .cs-item-text {
-    /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
-    line-height: 1.5em;
-    margin: 0;
-    color: var(--bodyTextColor);
-    transition: color 0.3s;
-    text-align: inherit;
-  }
-  #services-1331 .cs-background {
-    width: 100%;
-    height: 100%;
+  #steps-1893 .cs-picture {
+    width: 25.8125em;
+    height: 37.0625em;
+    margin-top: 1.5em;
+    box-sizing: border-box;
+    background-color: #DAB692;
+    overflow: hidden;
+    border: 8px solid #DAB692;
+    border-radius: 16.25rem;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
+    right: 0;
+    z-index: -1;
   }
-  #services-1331 .cs-background img {
+  #steps-1893 .cs-picture img {
     width: 100%;
     height: 100%;
-    opacity: 0.06;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
+    transition: transform 0.7s;
   }
-}
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-  #services-1331 .cs-container {
-    max-width: 80rem;
+  #steps-1893 .cs-graphic {
+    height: auto;
+    position: absolute;
   }
-  #services-1331 .cs-content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    /* 48px - 80px */
-    gap: clamp(3rem, 6vw, 5rem);
+  #steps-1893 .cs-brown {
+    width: 10.3125em;
+    height: auto;
+    top: 1.25em;
+    left: 1.5em;
+    z-index: -2;
+    transform: rotate(140deg);
+  }
+  #steps-1893 .cs-peach {
+    width: 4.3125em;
+    height: auto;
+    top: 1em;
+    left: 8.75em;
+    transform: rotate(-40deg);
+  }
+  #steps-1893 .cs-leaf {
+    width: 14em;
+    height: auto;
+    bottom: 0em;
+    right: 1em;
+    z-index: 1;
+  }
+  #steps-1893 .cs-dots {
+    width: 16.3125em;
+    height: auto;
+    left: 1em;
+    bottom: 1em;
+    z-index: -2;
+  }
+  #steps-1893 .cs-lines {
+    width: 15.375em;
+    right: 0;
+    bottom: 0em;
+  }
+  #steps-1893 .cs-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #steps-1893 .cs-content {
+    /* set text align to left if content needs to be left aligned */
     text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
   }
-  #services-1331 .cs-title {
+  #steps-1893 .cs-topper {
+    color: var(--secondary);
+  }
+  #steps-1893 .cs-title {
     margin: 0;
   }
-  #services-1331 .cs-flex-group {
-    width: 50%;
+  #steps-1893 .cs-card-group {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    align-items: stretch;
+    grid-auto-flow: row;
+    /* 24px - 32px */
+    gap: clamp(1.5rem, 3vw, 2rem);
   }
-  #services-1331 .cs-card-group {
+  #steps-1893 .cs-item {
+    list-style: none;
+    padding-bottom: 2rem;
+    border-bottom: #eee 1px solid;
+    display: flex;
+    align-items: flex-start;
+    /* 16px - 24px */
+    gap: clamp(1rem, 2vw, 1.5rem);
+    position: relative;
+  }
+  #steps-1893 .cs-item:last-of-type {
+    border-bottom: none;
+  }
+  #steps-1893 .cs-number {
+    /* 49px - 72px */
+    font-size: clamp(3.0625rem, 6vw, 4.5rem);
+    font-weight: 900;
+
+    color: var(--primary);
+    opacity: 0.2;
+    display: block;
+      font-family: 'Playfair Display';
+  }
+  #steps-1893 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: 700;
+    line-height: 1.125em;
+    margin: 0 0 0.75rem 0;
+    color: var(--headerColor);
+      font-family: 'Playfair Display';
+  }
+  #steps-1893 .cs-item-text {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 0;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #steps-1893 .cs-container {
+    max-width: 80rem;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    column-gap: 1rem;
+    align-items: stretch;
+    /* 48px - 60px */
+    gap: clamp(3rem, 6vw, 3.75rem);
   }
-  #services-1331 .cs-item {
-    grid-column: span 4;
+  #steps-1893 .cs-card-group {
+    /* 16px - 32px */
+    gap: clamp(1rem, 3vw, 2rem);
+  }
+  #steps-1893 .cs-item {
+    flex-direction: row;
+  }
+  #steps-1893 .cs-image-group {
+    font-size: min(1.5vw, 1rem);
+    height: auto;
+    min-height: 38.5em;
+    flex: none;
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+  #steps-1893 .cs-picture {
+    height: 96.266234%;
   }
 }
                                 
 </style>
 
-<section id="services-1331">
+<section id="steps-1893">
     <div class="cs-container">
-        <div class="cs-content">
-            <div class="cs-flex-group">
-                <span class="cs-topper" style="color: var(--secondary);">Our Process</span>
-                <h2 class="cs-title">How Pro Tubs LLC Makes It Easy</h2>
-            </div>
-            <p class="cs-text">
-                We keep it simple. Whether your tub is chipped, stained, or just outdated. Our proven process brings it back to life in just one day. No demolition. No mess.
-            </p>
+        <div class="cs-image-group">
+            <picture class="cs-picture">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="/assets/images/6.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="/assets/images/6.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/6.jpg" alt="happy salon client" width="324" height="467">
+            </picture>
+            <img class="cs-graphic cs-brown" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/brown-lines2.svg" alt="graphic" width="100" height="98" aria-hidden="true">
+            <img class="cs-graphic cs-peach" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/peach-blob.svg" alt="graphic" width="42" height="31" aria-hidden="true">
+            <img class="cs-graphic cs-leaf" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/leaf-reverse.svg" alt="graphic" width="136" height="171" aria-hidden="true">
+            <img class="cs-graphic cs-dots" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/beige-dots.svg" alt="graphic" width="159" height="88" aria-hidden="true">
+            <img class="cs-graphic cs-lines" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/mesh-reverse.svg" alt="graphic" width="150" height="165" aria-hidden="true">
         </div>
-        <ul class="cs-card-group">
- <li class="cs-item">
-    <a href="/contact" class="cs-link">
-        <span class="cs-step">Step 1</span>
-        <h3 class="cs-h3">Schedule Your Service</h3>
-        <p class="cs-item-text">
-            Skip the quote, our flat rate is always $479. Call or message us to pick a date and we’ll take care of the rest.
-        </p>
-    </a>
-</li>
+        <div class="cs-wrapper">
+            <div class="cs-content">
+                <h2 class="cs-title">3 Easy Steps<BR> to Love Your Look</h2>
+            </div>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-number">1</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Book Your Appointment</h3>
+                        <p class="cs-item-text">
+                            Call us at 386-760-3515 or book online to reserve a time that works best for your schedule. 
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">2</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Relax & Get Pampered</h3>
+                        <p class="cs-item-text">
+                            Sit back in our welcoming salon while our stylists listen, care, and bring your vision to life.
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-number">3</span>
+                    <div class="cs-flex">
+                        <h3 class="cs-h3">Walk Out Feeling Amazing</h3>
+                        <p class="cs-item-text">
+                            Leave with confidence knowing your hair looks and feels its absolute best. 
+                        </p>
+                    </div>
+                </li>
+                <li class="cs-item">
+                   <a href="/contact" class="cs-button-solid" style="margin: auto; max-width: 280px; display: block;">Book an Appointment</a>
+                </li>
+            </ul>
+        </div>
 
-            <li class="cs-item">
-                <a href="/contact" class="cs-link">
-                    <span class="cs-step">Step 2</span>
-                    <h3 class="cs-h3">We Refinish in One Day</h3>
-                    <p class="cs-item-text">
-                        Our expert team arrives on time, protects your space, and gets to work. Most jobs are completed in just a few hours.
-                    </p>
-                </a>
-            </li>
-            <li class="cs-item">
-                <a href="/contact" class="cs-link">
-                    <span class="cs-step">Step 3</span>
-                    <h3 class="cs-h3">Enjoy Your Like New Tub</h3>
-                    <p class="cs-item-text">
-                        Your tub looks brand new, without the cost of replacement. Durable, glossy, and ready to use in just 24 hours.
-                    </p>
-                </a>
-            </li>
-        </ul>
         
-          {% include 'components/cta_button.html' %}
+    </div>
+              
 </section>
-
-                                
+                 
