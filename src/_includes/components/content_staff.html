@@ -1,0 +1,322 @@
+<!-- ============================================ -->
+<!--                Meet The Team                 -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---       Meet The Team        -->
+<--- -------------------------- -*/
+
+    /* Mobile - 360px */
+    @media only screen and (min-width: 0rem) {
+        #meet-team-2196 {
+            padding: var(--sectionPadding);
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        #meet-team-2196 .cs-container {
+            width: 100%;
+            max-width: 80rem;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+        }
+
+        #meet-team-2196 .cs-content {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #meet-team-2196 .cs-card-group {
+            width: 100%;
+            max-width: 25rem;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            row-gap: 1.5rem;
+        }
+
+        #meet-team-2196 .cs-item {
+            list-style: none;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            grid-column: span 12;
+            gap: 1rem;
+            position: relative;
+        }
+
+        #meet-team-2196 .cs-item:hover {
+            cursor: pointer;
+        }
+
+        #meet-team-2196 .cs-item:hover .cs-link {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        #meet-team-2196 .cs-item:hover .cs-name {
+            color: var(--primary);
+        }
+
+        #meet-team-2196 .cs-item:hover .cs-picture:after {
+            opacity: 1;
+        }
+
+        #meet-team-2196 .cs-item:hover .cs-picture img {
+            transform: scale(1.15);
+        }
+
+        #meet-team-2196 .cs-image-group {
+            width: 100%;
+            /* 280px - 320px */
+            height: clamp(17.5rem, 35vw, 20rem);
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        #meet-team-2196 .cs-picture {
+            width: 100%;
+            height: 100%;
+            /* clips img tag from overflowing it on hover */
+            overflow: hidden;
+            display: block;
+            position: relative;
+        }
+
+        #meet-team-2196 .cs-picture:after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.72) 14.59%, rgba(0, 0, 0, 0) 43.18%);
+            opacity: 0;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.3s;
+        }
+
+        #meet-team-2196 .cs-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+            position: absolute;
+            z-index: -1;
+            transition: transform 0.6s;
+        }
+
+        #meet-team-2196 .cs-social {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            position: absolute;
+            bottom: 1rem;
+        }
+
+        #meet-team-2196 .cs-link {
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            z-index: 1;
+            transition: transform 0.3s, opacity 0.3s;
+            transform: translateY(1rem);
+        }
+
+        #meet-team-2196 .cs-link:nth-of-type(2) {
+            transition-delay: 0.1s;
+        }
+
+        #meet-team-2196 .cs-link:nth-of-type(3) {
+            transition-delay: 0.2s;
+        }
+
+        #meet-team-2196 .cs-link:nth-of-type(4) {
+            transition-delay: 0.3s;
+        }
+
+        #meet-team-2196 .cs-link-icon {
+            width: 1.25rem;
+            height: auto;
+        }
+
+        #meet-team-2196 .cs-info {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.25rem;
+        }
+
+        #meet-team-2196 .cs-job {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.5em;
+            color: var(--bodyTextColor);
+            display: block;
+        }
+
+        #meet-team-2196 .cs-name {
+            /* 20px - 25px */
+            font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            margin: 0;
+            color: var(--headerColor);
+            display: block;
+        }
+    }
+
+    /* Tablet - 768px */
+    @media only screen and (min-width: 48rem) {
+          #meet-team-2196 {
+            padding-top:200px
+          }
+        #meet-team-2196 .cs-card-group {
+            max-width: none;
+            /* 16px - 20px */
+            column-gap: clamp(1rem, 2vw, 1.25rem);
+            justify-content: center;
+        }
+
+        #meet-team-2196 .cs-item {
+            grid-column: span 4;
+        }
+    }
+</style>
+
+<section id="meet-team-2196"  data-aos="fade-in">
+    <div class="cs-container">
+        <div class="cs-content">
+        <span class="cs-topper">Meet The Team</span>
+            <h2 class="cs-title">Professional Hair Stylists<BR> in Port Orange, FL</h2>
+    
+        </div>
+
+        <ul class="cs-card-group">
+            <!-- Geri -->
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!-- Replace with real photo when ready -->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-one.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-one.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-one.jpg"
+                            alt="Geri Buckley, haircolor, highlight, and hair extension specialist in Port Orange FL"
+                            width="305" height="320">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="https://www.facebook.com/FleurDeLisSalon" class="cs-link" aria-label="Facebook"
+                            target="_blank" rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/face-gold.svg"
+                                alt="facebook" width="20" height="20">
+                        </a>
+                        <a href="https://www.instagram.com/fleurdelissalonportorange" class="cs-link"
+                            aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-gold.svg"
+                                alt="instagram" width="20" height="20">
+                        </a>
+                        <a href="https://www.tiktok.com/@fdlsalonpo" class="cs-link" aria-label="TikTok" target="_blank"
+                            rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/twitter-gold.svg"
+                                alt="tiktok" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-text">Owner and Creative Director</span>
+                    <span class="cs-title">Geri Buckley</span>
+                    <p class="cs-job" style="margin-top:.5rem;">
+                        Haircolor, highlight, and hair extension specialist. 43 years of experience and advanced
+                        training with world renowned stylists. Leads in salon education and quality standards.
+                    </p>
+                </div>
+            </li>
+
+            <!-- Graci -->
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!-- Replace with real photo when ready -->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-two.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-two.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-two.jpg"
+                            alt="Graci, haircolor, highlight and long hair specialist in Port Orange FL" width="305"
+                            height="320">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="https://www.instagram.com/fleurdelissalonportorange" class="cs-link"
+                            aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-gold.svg"
+                                alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-text">Color and Long Hair Specialist</span>
+                    <span class="cs-title">Graci</span>
+                    <p class="cs-job" style="margin-top:.5rem;">
+                        Focuses on haircolor, highlights, and long hair services. Known for healthy shine, soft
+                        dimension, and custom maintenance plans.
+                    </p>
+                </div>
+            </li>
+
+            <!-- Sydney -->
+            <li class="cs-item">
+                <div class="cs-image-group">
+                    <picture class="cs-picture">
+                        <!-- Replace with real photo when ready -->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-three.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-three.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimages2.nyc3.digitaloceanspaces.com/Images/MISC/day-care-team-three.jpg"
+                            alt="Sydney, haircolor, highlight and hairstyling specialist in Port Orange FL" width="305"
+                            height="320">
+                    </picture>
+                    <div class="cs-social">
+                        <a href="https://www.instagram.com/fleurdelissalonportorange" class="cs-link"
+                            aria-label="Instagram" target="_blank" rel="noopener">
+                            <img class="cs-link-icon" loading="lazy" decoding="async"
+                                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-gold.svg"
+                                alt="instagram" width="20" height="20">
+                        </a>
+                    </div>
+                </div>
+                <div class="cs-info">
+                    <span class="cs-text">Color and Styling Specialist</span>
+                    <span class="cs-title">Sydney</span>
+                    <p class="cs-job" style="margin-top:.5rem;">
+                        Specializes in haircolor, highlights, and hairstyling for everyday looks and special events.
+                        Detail focused finishing and long lasting styles.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
