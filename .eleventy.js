@@ -127,5 +127,9 @@ module.exports = function (eleventyConfig) {
             data: "_data", // Global data files directory
         },
         htmlTemplateEngine: "njk", // Nunjucks for HTML templates
+        serverOptions: {
+            port: 5000,
+            host: "0.0.0.0",
+        },
     };
 };
