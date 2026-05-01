@@ -4,8 +4,8 @@ module.exports = {
     phoneForTel: "386.760.3515",
     phoneFormatted: "386.760.3515",
     address: {
-        lineOne: "3994 S Nova Rd",
-        lineTwo: "",
+        lineOne: "209 Dunlawton Ave",
+        lineTwo: "Ste 8",
         city: "Port Orange",
         state: "FL",
         zip: "32127",

@@ -248,10 +248,9 @@
                     <span class="cs-title">Location</span>
                 </li>
                 <li class="cs-li">
-                    <a href="" class="cs-link" target="_blank" rel="noopener">
-                        
-209 Dunlawton Ave Ste 8
-Port Orange, FL 32127 
+                    <a href="{{ client.address.mapLink }}" class="cs-link" target="_blank" rel="noopener">
+                        {{ client.address.lineOne }}{% if client.address.lineTwo %} {{ client.address.lineTwo }}{% endif %}<br>
+                        {{ client.address.city }}, {{ client.address.state }} {{ client.address.zip }}
                     </a>
 
                     
