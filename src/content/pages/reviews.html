@@ -1,12 +1,14 @@
 ---
-title: "Reviews | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "Client Reviews | Fleur de Lis Salon – Port Orange, FL"
+description: "See what our clients say about Fleur de Lis Salon in Port Orange, FL. Read real reviews from happy customers who trust us for haircuts, color, extensions, and bridal styling."
 permalink: "/reviews/"
+tags: "sitemap"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
+    {% include "components/home-schema.html" %}
     <link rel="stylesheet" href="/assets/css/reviews.css">
 {% endblock %}
 
@@ -38,7 +40,7 @@ permalink: "/reviews/"
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
             <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
-            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+            <img src="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="Fleur de Lis Salon interior" width="1920" height="482" loading="eager" decoding="async">
         </picture>
     </div>
 
@@ -50,9 +52,9 @@ permalink: "/reviews/"
         <div class="cs-container">
             <div class="cs-content">
                 <span class="cs-topper">Our Reviews</span>
-                <h2 class="cs-title">Words From Our Customers</h2>
+                <h2 class="cs-title">Words From Our Clients</h2>
                 <p class="cs-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit dolor volutpat porttitor sagittis nunc nisl. Sagittis sit pellentesque gravida viverra. Leo ut sed euismod tortor risus et. Ornare non neque, leo, ornare. Lorem ipsum dolor sit amet.
+                    Our clients are at the heart of everything we do at Fleur de Lis Salon. We are proud to have served Port Orange families for over 25 years, and we love hearing your feedback.
                 </p>
             </div>
             <ul class="cs-card-group">
@@ -60,130 +62,88 @@ permalink: "/reviews/"
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
+                        Geri and her team are absolutely amazing. I've been going to Fleur de Lis for years and they never disappoint. My hair color always comes out exactly how I want it. Highly recommend!
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Sarah M.</span>
+                            <span class="cs-desc">Loyal Client</span>
                         </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="96" height="16">
                     </div>
                 </li>
                 <!-- Review 2 -->
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        Best salon in Port Orange, hands down. I got my extensions done here and the results were stunning. The staff made me feel so comfortable and really listened to what I wanted.
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Jennifer T.</span>
+                            <span class="cs-desc">Port Orange Resident</span>
                         </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="96" height="16">
                     </div>
                 </li>
                 <!-- Review 3 -->
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        I had my bridal hair done by Fleur de Lis and it was absolutely perfect on my wedding day. They did a trial run beforehand and communicated every step of the way. I felt like a princess!
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Amanda R.</span>
+                            <span class="cs-desc">Bride</span>
                         </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="96" height="16">
                     </div>
                 </li>
-                <!-- Review 1 -->
+                <!-- Review 4 -->
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
+                        I've been bringing my whole family here for cuts — myself, my husband, and my two kids. Everyone gets the same great attention and friendly service every single visit.
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Karen L.</span>
+                            <span class="cs-desc">Family Client</span>
                         </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="96" height="16">
                     </div>
                 </li>
-                <!-- Review 2 -->
+                <!-- Review 5 -->
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        Got a Brazilian Blowout and my hair has never been smoother or easier to style. The treatment lasted months. Worth every penny — I'll be back for sure!
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Michelle B.</span>
+                            <span class="cs-desc">Regular Client</span>
                         </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="96" height="16">
                     </div>
                 </li>
-                <!-- Review 3 -->
+                <!-- Review 6 -->
                 <li class="cs-item">
                     <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
                     <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
+                        Fantastic highlights! I've tried other salons but always come back to Fleur de Lis. Their color specialists really understand how to work with my natural hair tone. Super happy!
                     </p>
                     <div class="cs-info">
                         <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
+                            <span class="cs-name">Diane C.</span>
+                            <span class="cs-desc">Loyal Client</span>
                         </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 1 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, debitis!
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 2 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
-                    </div>
-                </li>
-                <!-- Review 3 -->
-                <li class="cs-item">
-                    <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/newsvgs/profile.svg" alt="profile picture" width="80" height="80">
-                    <p class="cs-item-text">
-                        Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
-                    </p>
-                    <div class="cs-info">
-                        <div class="cs-flex-group">
-                            <span class="cs-name">Jon Doe</span>
-                            <span class="cs-desc">Homeowner</span>
-                        </div>
-                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+                        <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="5 stars" width="96" height="16">
                     </div>
                 </li>
             </ul>
-            <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+            <a href="/contact/" class="cs-button-solid">Book an Appointment</a>
         </div>
     </section>
 

@@ -1,13 +1,15 @@
 ---
-title: "Blog | Code Stitch Web Designs"
-description: "Meta description for the page"
+title: "Hair Tips & Salon News | Fleur de Lis Salon Blog – Port Orange, FL"
+description: "Read the Fleur de Lis Salon blog for expert hair care tips, color trends, styling advice, and salon news from our stylists in Port Orange, FL."
 permalink: "/blog/"
+tags: "sitemap"
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="preload" as="image" href="{% getUrl "/assets/images/cabinets.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
+    {% include "components/home-schema.html" %}
+    <link rel="preload" as="image" href="{% getUrl "/assets/images/landing.jpg" | resize({ width: 640, height: 600 }) | avif %}"/>
     <link rel="stylesheet" href="/assets/css/blog.css">
 {% endblock %}
 
@@ -21,9 +23,9 @@ permalink: "/blog/"
         
         <div class="cs-container">
 
-<h1 class="cs-topper" style="max-width: 100%;">Detroit Metro Area Real Estate Blog</h1>
+<h1 class="cs-topper" style="max-width: 100%;">Hair Tips & Salon News from Fleur de Lis</h1>
             {% if collections.post | length == 0 %}
-                <h1 class="cs-title">No Recent Posts</h1>
+                <h2 class="cs-title">No Recent Posts</h2>
             {% else %}
                 {%- for post in collections.post | reverse -%}
                     <article class="cs-article">
@@ -71,4 +73,3 @@ permalink: "/blog/"
         {% include 'sections/cta.html' %}
 
 {% endblock %}
-
