@@ -14,6 +14,8 @@ module.exports = {
     },
     socials: {
         google: "https://g.co/kgs/n4aSPHz",
+        facebook: "https://www.facebook.com/fleurdelissaloninc",
+        instagram: "https://www.instagram.com/fleurdelissalonportorange",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://fdlsalon.com",
