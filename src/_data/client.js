@@ -16,6 +16,7 @@ module.exports = {
         google: "https://g.co/kgs/n4aSPHz",
         facebook: "https://www.facebook.com/fleurdelissaloninc",
         instagram: "https://www.instagram.com/fleurdelissalonportorange",
+        tiktok: "https://www.tiktok.com/@fdlsalonpo",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://fdlsalon.com",

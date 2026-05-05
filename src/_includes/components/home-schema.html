@@ -25,6 +25,7 @@
                 {%- endif -%}
             },
         {% endif %}
+        "priceRange": "$$",
         {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
         "areaServed": [
             { "@type": "City", "name": "Port Orange", "addressRegion": "FL" },
