@@ -241,7 +241,11 @@
     <div class="cs-container">
         <div class="cs-content">
 
-            <h2 class="cs-title" style="margin-bottom: 30px;">Book an Appointment</h2>
+            <h2 class="cs-title" style="margin-bottom: 16px;">Book an Appointment</h2>
+            <p class="cs-text" style="margin-bottom: 30px;">
+                Conveniently located in Port Orange and proudly serving the greater Daytona Beach area, including
+                South Daytona, Daytona Beach Shores, Ormond Beach, Holly Hill, and New Smyrna Beach.
+            </p>
 
             <ul class="cs-ul">
                 <li class="cs-li">
@@ -272,7 +276,10 @@
                     </picture>
                     <div class="cs-flex-group">
                         <span class="cs-header">Location</span>
-                        209 Dunlawton Ave Ste 8 Port Orange, FL 32127 
+                        <a href="{{ client.address.mapLink }}" class="cs-link" target="_blank" rel="noopener">
+                            {{ client.address.lineOne }}{% if client.address.lineTwo %} {{ client.address.lineTwo }}{% endif %}<br>
+                            {{ client.address.city }}, {{ client.address.state }} {{ client.address.zip }}
+                        </a>
                     </div>
                 </li>
             </ul>

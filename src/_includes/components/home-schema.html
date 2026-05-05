@@ -26,6 +26,16 @@
             },
         {% endif %}
         {% if client.domain and page.url %}"url": "{{ client.domain }}{{ page.url }}",{% endif %}
+        "areaServed": [
+            { "@type": "City", "name": "Port Orange", "addressRegion": "FL" },
+            { "@type": "City", "name": "Daytona Beach", "addressRegion": "FL" },
+            { "@type": "City", "name": "South Daytona", "addressRegion": "FL" },
+            { "@type": "City", "name": "Daytona Beach Shores", "addressRegion": "FL" },
+            { "@type": "City", "name": "Ormond Beach", "addressRegion": "FL" },
+            { "@type": "City", "name": "Holly Hill", "addressRegion": "FL" },
+            { "@type": "City", "name": "New Smyrna Beach", "addressRegion": "FL" },
+            { "@type": "City", "name": "Edgewater", "addressRegion": "FL" }
+        ],
         {% if client.socials %}
             "sameAs": [{%- for platform, url in client.socials -%}
                     {% if not loop.first %},{% endif %}"{{ url }}"
