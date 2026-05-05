@@ -282,6 +282,36 @@
                         </a>
                     </div>
                 </li>
+                {% if client.hours %}
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/cal.svg"
+                            alt="hours icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Hours</span>
+                        {% for hour in client.hours %}
+                        <span class="cs-link" style="display:flex; justify-content:space-between; gap:1rem; min-width:160px;">
+                            <span>{{ hour.dayOfWeek }}</span>
+                            <span>{{ hour.display }}</span>
+                        </span>
+                        {% endfor %}
+                    </div>
+                </li>
+                {% endif %}
+                {% if client.rating and client.rating.reviewUrl %}
+                <li class="cs-li">
+                    <picture class="cs-icon-wrapper">
+                        <img aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/star.svg"
+                            alt="review icon" class="cs-icon" width="40" height="40" decoding="async">
+                    </picture>
+                    <div class="cs-flex-group">
+                        <span class="cs-header">Reviews</span>
+                        <span class="cs-link">{{ client.rating.ratingValue }} ★ &nbsp;({{ client.rating.reviewCount }} reviews)</span>
+                        <a href="{{ client.rating.reviewUrl }}" class="cs-link" target="_blank" rel="noopener">Leave us a review &rarr;</a>
+                    </div>
+                </li>
+                {% endif %}
             </ul>
         </div>
         <!--Form-->

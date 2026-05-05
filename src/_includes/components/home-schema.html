@@ -37,6 +37,23 @@
             { "@type": "City", "name": "New Smyrna Beach", "addressRegion": "FL" },
             { "@type": "City", "name": "Edgewater", "addressRegion": "FL" }
         ],
+        {% if client.hours %}
+        "openingHoursSpecification": [
+            {%- set openHours = client.hours | selectattr("opens") -%}
+            {%- for hour in openHours -%}
+                {%- if not loop.first %},{%- endif %}
+                {"@type":"OpeningHoursSpecification","dayOfWeek":"{{ hour.dayOfWeek }}","opens":"{{ hour.opens }}","closes":"{{ hour.closes }}"}
+            {%- endfor %}
+        ],
+        {% endif %}
+        {% if client.rating %}
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "{{ client.rating.ratingValue }}",
+            "reviewCount": "{{ client.rating.reviewCount }}",
+            "bestRating": "{{ client.rating.bestRating }}"
+        },
+        {% endif %}
         {% if client.socials %}
             "sameAs": [{%- for platform, url in client.socials -%}
                     {% if not loop.first %},{% endif %}"{{ url }}"

@@ -18,6 +18,21 @@ module.exports = {
         instagram: "https://www.instagram.com/fleurdelissalonportorange",
         tiktok: "https://www.tiktok.com/@fdlsalonpo",
     },
+    hours: [
+        { dayOfWeek: "Tuesday",   opens: "10:00", closes: "19:00", display: "10am – 7pm" },
+        { dayOfWeek: "Wednesday", opens: "10:00", closes: "17:00", display: "10am – 5pm" },
+        { dayOfWeek: "Thursday",  opens: "10:00", closes: "19:00", display: "10am – 7pm" },
+        { dayOfWeek: "Friday",    opens: "09:00", closes: "15:00", display: "9am – 3pm" },
+        { dayOfWeek: "Saturday",  opens: "08:00", closes: "15:00", display: "8am – 3pm" },
+        { dayOfWeek: "Sunday",    opens: null,    closes: null,    display: "Closed" },
+        { dayOfWeek: "Monday",    opens: null,    closes: null,    display: "Closed" },
+    ],
+    rating: {
+        ratingValue: 4.2,
+        reviewCount: 106,
+        bestRating: 5,
+        reviewUrl: "https://share.google/3PrZC7MblwSSDd5ch",
+    },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
     domain: "https://fdlsalon.com",
     // Passing the isProduction variable for use in HTML templates
