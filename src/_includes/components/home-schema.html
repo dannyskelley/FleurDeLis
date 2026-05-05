@@ -49,9 +49,9 @@
         {% if client.rating %}
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "{{ client.rating.ratingValue }}",
-            "reviewCount": "{{ client.rating.reviewCount }}",
-            "bestRating": "{{ client.rating.bestRating }}"
+            "ratingValue": {{ client.rating.ratingValue }},
+            "reviewCount": {{ client.rating.reviewCount }},
+            "bestRating": {{ client.rating.bestRating }}
         },
         {% endif %}
         {% if client.socials %}
