@@ -2,3 +2,7 @@
 http://www.fdlsalon.com/*    https://fdlsalon.com/:splat    301!
 https://www.fdlsalon.com/*   https://fdlsalon.com/:splat    301!
 http://fdlsalon.com/*        https://fdlsalon.com/:splat    301!
+
+# The blog has been removed; send old links to the closest active service page.
+/blog/                       /services/                    301!
+/blog/*                      /services/                    301!
