@@ -1,0 +1,1 @@
+- [Salon pricing policy](salon-pricing.md) — November 2026 increase uses the supplied rounded price list, not an unrounded percentage calculation.

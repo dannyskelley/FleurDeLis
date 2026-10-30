@@ -2,3 +2,6 @@
 .cache
 node_modules
 public
+.pythonlibs/
+__pycache__/
+*.egg-info/
