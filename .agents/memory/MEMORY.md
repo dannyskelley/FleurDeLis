@@ -1,1 +1,2 @@
 - [Salon pricing policy](salon-pricing.md) — November 2026 increase uses the supplied rounded price list, not an unrounded percentage calculation.
+- [Site punctuation](site-copy.md) — no dashes in visible website copy or metadata; preserve functional URLs and code.
